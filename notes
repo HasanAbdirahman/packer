@@ -1,0 +1,9 @@
+After you create the pacer.json file, then the variables file and lastly other service file you wanted like docker in this case.
+
+Then run the following commands in order to create the instance and test. Lastly create an ami which can be accessed in the console and can launch instances quickly.
+
+    packer.exe validate --var-file packer-vars.json packer.json
+
+    packer.exe inspect --var-file packer-vars.json packer.json
+
+    packer.exe build --var-file packer-vars.json packer.json
